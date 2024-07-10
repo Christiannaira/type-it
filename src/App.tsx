@@ -1,15 +1,11 @@
-
+import TypeIt from "typeit";
 
 function App() {
 
-  
-
   return (
     <>
-     
-    <h1 id="demo">
 
-    </h1>
+  <h1>Typei</h1>
 
     </>
   )
