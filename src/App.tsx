@@ -1,11 +1,15 @@
-import TypeIt from "typeit";
+import TypeIt from "typeit-react"
 
 function App() {
 
   return (
     <>
 
-  <h1>Typei</h1>
+  <h1>
+    <TypeIt>
+      This will be typed in a `span` element!
+    </TypeIt>
+  </h1>
 
     </>
   )
