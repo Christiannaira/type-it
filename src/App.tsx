@@ -1,6 +1,12 @@
 import TypeIt from "typeit-react"
 
+
+
 function App() {
+
+  const SuperStrong = ({children}) => {
+    return <strong style={{fontSize: '80px'}}>{children}</strong>
+  };
 
   return (
     <>
@@ -23,6 +29,10 @@ function App() {
       speed: 60,
     }}>
       This will be typed in an H3 tag.
+    </TypeIt>
+
+    <TypeIt>
+      Weak text. <SuperStrong>Super strong text.</SuperStrong>
     </TypeIt>
 
     </>
