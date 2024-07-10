@@ -6,10 +6,24 @@ function App() {
     <>
 
   <h1>
-    <TypeIt>
-      This will be typed in a `span` element!
+    <TypeIt
+    options={{
+      strings: ['Hi Christian Naira', 'hello'],
+      speed: 50, 
+      waitUntilVisible: true,
+      loop: true,
+    }}
+    >
     </TypeIt>
+
   </h1>
+
+  <TypeIt as={"h3"} options={{
+      loop: true,
+      speed: 60,
+    }}>
+      This will be typed in an H3 tag.
+    </TypeIt>
 
     </>
   )
